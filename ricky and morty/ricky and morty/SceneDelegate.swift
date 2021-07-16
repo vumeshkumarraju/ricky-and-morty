@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ricky and morty
 //
-//  Created by V UMESH KUMAR RAJU on 11/07/21.
+//  Created by V UMESH KUMAR RAJU on 15/07/21.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  ricky_and_mortyUITests.swift
 //  ricky and mortyUITests
 //
-//  Created by V UMESH KUMAR RAJU on 11/07/21.
+//  Created by V UMESH KUMAR RAJU on 15/07/21.
 //
 
 import XCTest
