@@ -29,9 +29,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 137
         let chcell = TableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as! characterTableViewCell
         chcell.characterLabel.text = arrChar[indexPath.row].name
-        chcell.numberLabel.text = "\(indexPath.row)"
+        chcell.numberLabel.text = "\(indexPath.row+1)"
         let url = URL(string: arrChar[indexPath.row].pic)
         if let data = try? Data(contentsOf: url!){
             chcell.characterImage.image = UIImage(data: data)
