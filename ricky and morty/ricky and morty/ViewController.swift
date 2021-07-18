@@ -83,7 +83,5 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         TableView.dataSource = self
         SerchField.layer.cornerRadius = 8
         SerchField.clipsToBounds = true
-        SerchField.backgroundColor = UIColor.gray
-        
     }
 }

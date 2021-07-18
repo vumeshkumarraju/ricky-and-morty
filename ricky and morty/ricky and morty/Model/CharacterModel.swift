@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct CharacterModel{
+class CharacterModel{
     let name : String
     let pic : String
     let origin : String

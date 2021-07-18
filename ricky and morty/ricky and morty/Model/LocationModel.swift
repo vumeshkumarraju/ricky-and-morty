@@ -7,11 +7,18 @@
 
 import Foundation
 
-struct LocationModel{
+class LocationModel{
     let name : String
     let type : String
     let dimension: String
     let chars: [String]
+    
+    init(name: String,type :String,dimension:String,chars:[String]) {
+        self.name = name
+        self.type = type
+        self.dimension = dimension
+        self.chars = chars
+    }
     
     func getChar(){
         print("Residents : -")
