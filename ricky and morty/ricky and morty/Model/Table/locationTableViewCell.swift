@@ -13,10 +13,12 @@ class locationTableViewCell: UITableViewCell {
     @IBOutlet var locationName: UILabel!
     @IBOutlet var locationNumber: UILabel!
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        locationView.layer.cornerRadius = 5
+        locationView.layer.cornerRadius = 10
         locationView.layer.masksToBounds = true
     }
 

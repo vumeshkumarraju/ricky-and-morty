@@ -7,12 +7,20 @@
 
 import Foundation
 
-struct EpisodeModel{
-    let name : String
-    let AliedOn : String
-    let season: String
-    let chars: [String]
-    
+class EpisodeModel{
+        let name : String
+        let AiredOn : String
+        let season: String
+        let episode : String
+        let chars: [String]
+
+        init(name:String,AiredOn:String,season:String,episode:String,chars:[String]) {
+            self.name = name
+            self.AiredOn = AiredOn
+            self.season = season
+            self.episode = episode
+            self.chars = chars
+        }
     func getChar(){
         var i = 0
         while i != chars.count {
@@ -24,7 +32,7 @@ struct EpisodeModel{
     
     func show(){
         print("name :- \(name)")
-        print("Alied On :- \(AliedOn)")
+        print("Alied On :- \(AiredOn)")
         print("episode and season :- \(season)")
         getChar()
     }
