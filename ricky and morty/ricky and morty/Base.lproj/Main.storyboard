@@ -17,69 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FH-sZ-Uhb" userLabel="down">
-                                <rect key="frame" x="0.0" y="815" width="414" height="81"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3SJ-yw-Kqv" userLabel="up">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FC2-0Z-RAR">
-                                        <rect key="frame" x="0.0" y="-28" width="421" height="109"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-B6-Eag">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="109"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G20-9N-WZ8">
-                                                        <rect key="frame" x="0.0" y="15" width="120" height="79"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="58" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Character" image="character"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="labelColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76r-SK-F8P">
-                                                <rect key="frame" x="138" y="0.0" width="145" height="109"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjX-NS-CSI">
-                                                        <rect key="frame" x="8" y="17" width="98" height="75"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="51" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Episodes" image="episode"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="labelColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-9v-GEb">
-                                                <rect key="frame" x="283" y="0.0" width="138" height="109"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX0-I6-rMz">
-                                                        <rect key="frame" x="0.0" y="24" width="102" height="61"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="51" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Locations" image="locations"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="labelColor"/>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="76r-SK-F8P" firstAttribute="leading" secondItem="FC2-0Z-RAR" secondAttribute="leading" constant="138" id="G3s-he-DDU"/>
-                                            <constraint firstItem="76r-SK-F8P" firstAttribute="centerX" secondItem="FC2-0Z-RAR" secondAttribute="centerX" id="h54-YL-boc"/>
-                                        </constraints>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2w-u4-d4J">
+                                        <rect key="frame" x="20" y="74" width="170.5" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" background="serchfield" disabledBackground="serchfield" translatesAutoresizingMaskIntoConstraints="NO" id="G3l-9O-usR">
+                                        <rect key="frame" x="20" y="123" width="367" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1451131105" green="0.14509013300000001" blue="0.1573435366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
-                                <color key="tintColor" red="0.018591209899999999" green="0.68105012180000002" blue="0.077932903479999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="FC2-0Z-RAR" firstAttribute="leading" secondItem="6FH-sZ-Uhb" secondAttribute="leading" id="7qM-9A-vgG"/>
-                                    <constraint firstAttribute="trailing" secondItem="FC2-0Z-RAR" secondAttribute="trailing" constant="-7" id="WEM-Ve-J3g"/>
-                                    <constraint firstAttribute="bottom" secondItem="FC2-0Z-RAR" secondAttribute="bottom" id="qFw-xa-ehs"/>
-                                    <constraint firstItem="FC2-0Z-RAR" firstAttribute="top" secondItem="6FH-sZ-Uhb" secondAttribute="top" constant="-28" id="vJ1-kH-zVh"/>
-                                </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SIR-vh-mIR">
                                 <rect key="frame" x="0.0" y="186" width="414" height="621"/>
@@ -97,7 +54,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rick Sanchez" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmA-z5-C9c">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmA-z5-C9c">
                                                     <rect key="frame" x="194" y="18" width="166" height="99"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="32"/>
@@ -128,48 +85,89 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3SJ-yw-Kqv" userLabel="up">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaH-q7-ShA" userLabel="down">
+                                <rect key="frame" x="10" y="810" width="414" height="86"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2w-u4-d4J">
-                                        <rect key="frame" x="20" y="74" width="170.5" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
-                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   Search" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3l-9O-usR">
-                                        <rect key="frame" x="20" y="123" width="367" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.1451131105" green="0.14509013300000001" blue="0.1573435366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="0.55686473849999996" green="0.55686473849999996" blue="0.57725375889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7w-Rv-vvc">
+                                        <rect key="frame" x="0.0" y="-3" width="421" height="84"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5Z-9O-hHH">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="84"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-F0-gSi">
+                                                        <rect key="frame" x="21" y="11" width="97" height="62"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                        <color key="tintColor" red="0.31385293790000002" green="0.68047624829999998" blue="0.25822121149999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="activeCharacter">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" red="0.0" green="0.63673919889999997" blue="0.12646629700000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77A-h9-Ild">
+                                                <rect key="frame" x="138" y="0.0" width="145" height="84"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0K-vv-kck">
+                                                        <rect key="frame" x="13" y="8" width="107" height="61"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                        <state key="normal" image="episode"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbM-Ng-zUd">
+                                                <rect key="frame" x="283" y="0.0" width="138" height="84"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8A-Te-fEw">
+                                                        <rect key="frame" x="0.0" y="8" width="95" height="63"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                        <state key="normal" image="locations"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="77A-h9-Ild" firstAttribute="centerX" secondItem="q7w-Rv-vvc" secondAttribute="centerX" id="60Z-F4-jAq"/>
+                                            <constraint firstItem="77A-h9-Ild" firstAttribute="leading" secondItem="q7w-Rv-vvc" secondAttribute="leading" constant="138" id="8cn-Qd-CeV"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" red="0.018591209899999999" green="0.68105012180000002" blue="0.077932903479999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="q7w-Rv-vvc" secondAttribute="bottom" constant="5" id="Kev-FQ-UBO"/>
+                                    <constraint firstItem="q7w-Rv-vvc" firstAttribute="leading" secondItem="uaH-q7-ShA" secondAttribute="leading" id="WqU-8G-aJk"/>
+                                    <constraint firstAttribute="trailing" secondItem="q7w-Rv-vvc" secondAttribute="trailing" constant="-7" id="cJ1-Ym-tdC"/>
+                                    <constraint firstItem="q7w-Rv-vvc" firstAttribute="top" secondItem="uaH-q7-ShA" secondAttribute="top" constant="-3" id="pOq-OI-Tr0"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="leading" secondItem="SIR-vh-mIR" secondAttribute="leading" id="8xr-Bx-m4l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uaH-q7-ShA" secondAttribute="trailing" constant="-30" id="0vd-sW-cDI"/>
+                            <constraint firstItem="uaH-q7-ShA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="55D-hf-R76"/>
+                            <constraint firstItem="uaH-q7-ShA" firstAttribute="top" secondItem="SIR-vh-mIR" secondAttribute="bottom" constant="3" id="ALK-ma-duh"/>
+                            <constraint firstAttribute="trailing" secondItem="3SJ-yw-Kqv" secondAttribute="trailing" id="AP0-66-nOV"/>
                             <constraint firstItem="3SJ-yw-Kqv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FeC-bV-p97"/>
-                            <constraint firstAttribute="trailing" secondItem="6FH-sZ-Uhb" secondAttribute="trailing" id="GU1-AN-NVR"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="trailing" secondItem="3SJ-yw-Kqv" secondAttribute="trailing" id="Wtq-eC-szs"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="trailing" secondItem="SIR-vh-mIR" secondAttribute="trailing" id="abW-fk-FxF"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fQ8-vX-Tcj"/>
+                            <constraint firstItem="3SJ-yw-Kqv" firstAttribute="leading" secondItem="SIR-vh-mIR" secondAttribute="leading" id="G9U-aS-GyJ"/>
                             <constraint firstAttribute="bottom" secondItem="3SJ-yw-Kqv" secondAttribute="bottom" constant="708" id="fnx-TZ-Zph"/>
-                            <constraint firstAttribute="bottom" secondItem="6FH-sZ-Uhb" secondAttribute="bottom" id="hPH-2y-E0w"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="top" secondItem="SIR-vh-mIR" secondAttribute="bottom" constant="8" symbolic="YES" id="knn-E9-vLk"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="top" secondItem="SIR-vh-mIR" secondAttribute="bottom" constant="8" id="mlq-dl-2jm"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="815" id="qCf-cR-t6K"/>
-                            <constraint firstItem="6FH-sZ-Uhb" firstAttribute="leading" secondItem="3SJ-yw-Kqv" secondAttribute="leading" id="v3X-4h-Hq5"/>
+                            <constraint firstItem="3SJ-yw-Kqv" firstAttribute="trailing" secondItem="SIR-vh-mIR" secondAttribute="trailing" id="hj5-tO-KTb"/>
+                            <constraint firstAttribute="bottom" secondItem="uaH-q7-ShA" secondAttribute="bottom" id="nYi-e0-5uX"/>
+                            <constraint firstItem="3SJ-yw-Kqv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pZG-3K-8ne"/>
+                            <constraint firstItem="SIR-vh-mIR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="rTe-Wv-szy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="SerchField" destination="G3l-9O-usR" id="Ill-yb-d3q"/>
                         <outlet property="TableView" destination="SIR-vh-mIR" id="Uhs-tu-4QE"/>
+                        <outletCollection property="characterButtonUI" destination="I5Z-9O-hHH" collectionClass="NSMutableArray" id="rou-Hy-zwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -187,11 +185,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcY-S8-ury" userLabel="up">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   Search" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Lg-ec-wpB">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" background="serchfield" disabledBackground="serchfield" translatesAutoresizingMaskIntoConstraints="NO" id="0Lg-ec-wpB">
                                         <rect key="frame" x="20" y="123" width="367" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1451131105" green="0.14509013300000001" blue="0.1573435366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="0.55686473849999996" green="0.55686473849999996" blue="0.57725375889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -219,12 +217,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRs-Yp-M1y">
-                                                        <rect key="frame" x="0.0" y="6" width="120" height="59"/>
+                                                        <rect key="frame" x="8" y="8" width="130" height="64"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="58" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Character" image="character"/>
+                                                        <state key="normal" image="character"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -233,12 +229,10 @@
                                                 <rect key="frame" x="138" y="0.0" width="145" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtz-FM-PxF">
-                                                        <rect key="frame" x="8" y="8" width="98" height="53"/>
+                                                        <rect key="frame" x="17" y="8" width="107" height="61"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="51" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Episodes" image="episode"/>
+                                                        <state key="normal" image="activeEpisode"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -247,12 +241,10 @@
                                                 <rect key="frame" x="283" y="0.0" width="138" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fud-l3-YzV">
-                                                        <rect key="frame" x="0.0" y="15" width="102" height="39"/>
+                                                        <rect key="frame" x="0.0" y="13" width="111" height="58"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="51" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Locations" image="locations"/>
+                                                        <state key="normal" image="locations"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -314,11 +306,11 @@
                                         <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   Search" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fO-w8-znW">
-                                        <rect key="frame" x="20" y="123" width="367" height="36"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" background="serchfield" disabledBackground="serchfield" translatesAutoresizingMaskIntoConstraints="NO" id="7fO-w8-znW">
+                                        <rect key="frame" x="20" y="123" width="367" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1451131105" green="0.14509013300000001" blue="0.1573435366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" red="0.55686473849999996" green="0.55686473849999996" blue="0.57725375889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -335,12 +327,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97f-yj-zOd">
-                                                        <rect key="frame" x="0.0" y="6" width="120" height="59"/>
+                                                        <rect key="frame" x="20" y="13" width="120" height="59"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="58" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Character" image="character"/>
+                                                        <state key="normal" image="character"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -349,12 +339,10 @@
                                                 <rect key="frame" x="138" y="0.0" width="145" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKP-I5-ghb">
-                                                        <rect key="frame" x="8" y="8" width="98" height="53"/>
+                                                        <rect key="frame" x="16" y="16" width="98" height="53"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="51" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Episodes" image="episode"/>
+                                                        <state key="normal" image="episode"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -363,12 +351,10 @@
                                                 <rect key="frame" x="283" y="0.0" width="138" height="84"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBu-uT-N2P">
-                                                        <rect key="frame" x="0.0" y="15" width="102" height="39"/>
+                                                        <rect key="frame" x="2" y="16" width="102" height="52"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
-                                                        <inset key="imageEdgeInsets" minX="51" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="Locations" image="locations"/>
+                                                        <state key="normal" image="activeLocation"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -418,9 +404,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="character" width="24" height="24"/>
-        <image name="episode" width="24" height="24"/>
-        <image name="locations" width="24" height="24"/>
+        <image name="activeCharacter" width="76" height="49"/>
+        <image name="activeEpisode" width="76" height="49"/>
+        <image name="activeLocation" width="76" height="49"/>
+        <image name="character" width="76" height="49"/>
+        <image name="episode" width="76" height="49"/>
+        <image name="locations" width="76" height="49"/>
+        <image name="serchfield" width="343" height="36"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
