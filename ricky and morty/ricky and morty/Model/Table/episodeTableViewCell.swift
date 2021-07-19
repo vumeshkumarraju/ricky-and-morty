@@ -6,14 +6,17 @@
 //
 
 import UIKit
+protocol segueSelectionDelegate {
+    func didSelect(n1:Int,n2:Int)
+}
 
 class episodeTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     @IBOutlet var episodeCollectionView: UICollectionView!
-    
     @IBOutlet var SeasonName: UILabel!
     var epi = [EpisodeModel]()
     var image = #imageLiteral(resourceName: "season1")
-
+    
+    var delegate :segueSelectionDelegate?
     func configure(with models:[EpisodeModel] ){
         self.epi = models
         episodeCollectionView.reloadData()
@@ -25,7 +28,7 @@ class episodeTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollectio
 
         episodeCollectionView.delegate = self
         episodeCollectionView.dataSource = self
-        // Initialization code
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -52,5 +55,7 @@ class episodeTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollectio
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 193, height: 255)
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.didSelect(n1:Int(epi[0].season) ?? 1,n2: indexPath.row)
+    }
 }

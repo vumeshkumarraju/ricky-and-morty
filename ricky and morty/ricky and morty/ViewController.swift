@@ -61,16 +61,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             chcell.characterImage.image = UIImage(data: data)
         }
         chcell.characterImage.layer.cornerRadius = chcell.characterImage.frame.height/2
-        chcell.characterImage.layer.borderWidth = 2
+        chcell.characterImage.clipsToBounds = true
         if arrChar[indexPath.row].status == "Alive"{
-            chcell.characterImage.layer.borderColor = UIColor(red: 0, green: 1, blue: 0, alpha: 0).cgColor
+            chcell.characterImage.layer.borderColor = UIColor.green.cgColor
         }
         else{
-            chcell.characterImage.layer.borderWidth = 2
-            chcell.characterImage.layer.borderColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0).cgColor
+            chcell.characterImage.layer.borderColor = UIColor.red.cgColor
         }
-        
-        chcell.characterImage.clipsToBounds = true
+        chcell.characterImage.layer.borderWidth = 2
         return chcell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

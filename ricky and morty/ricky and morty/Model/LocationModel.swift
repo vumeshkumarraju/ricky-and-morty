@@ -20,20 +20,11 @@ class LocationModel{
         self.chars = chars
     }
     
-    func getChar(){
-        print("Residents : -")
-        var i = 0
-        while i != chars.count {
-            let c = characterManger()
-            c.performRequest(urlString: chars[i])
-            i += 1
-        }
-    }
+    
     
     func show(){
         print("name :- \(name)")
         print("type :- \(type)")
         print("dimension :- \(dimension)")
-        getChar()
     }
 }

@@ -7,11 +7,17 @@
 
 import UIKit
 
-class episodeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class episodeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,segueSelectionDelegate {
+    
+    
+    
+    
     @IBOutlet var TableView: UITableView!
     
     let SeasonName = ["Season 1","Season 2","Season 3","Season 4"]
     let SeasonPoster = [#imageLiteral(resourceName: "season1"),#imageLiteral(resourceName: "season2"),#imageLiteral(resourceName: "season3"),#imageLiteral(resourceName: "season4")]
+    var n1 = 0
+    var n2 = 0
     var e = [EpisodeModel]()
     var e1 = [EpisodeModel]()
     var e2 = [EpisodeModel]()
@@ -84,10 +90,20 @@ class episodeViewController: UIViewController,UITableViewDelegate,UITableViewDat
         cell.image = SeasonPoster[indexPath.row]
         cell.SeasonName.text = SeasonName[indexPath.row]
         cell.configure(with: arrE[indexPath.row])
+        cell.delegate = self
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 293
     }
-
+    func didSelect(n1: Int,n2:Int) {
+        self.n1 = n1
+        self.n2 = n2
+        performSegue(withIdentifier: "singleEpisodesSegue", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? singleEpisodeViewController{
+            destination.model = arrE[n1-1][n2]
+        }
+    }
 }

@@ -21,19 +21,11 @@ class EpisodeModel{
             self.episode = episode
             self.chars = chars
         }
-    func getChar(){
-        var i = 0
-        while i != chars.count {
-            let c = characterManger()
-            c.performRequest(urlString: chars[i])
-            i += 1
-        }
-    }
+    
     
     func show(){
         print("name :- \(name)")
         print("Alied On :- \(AiredOn)")
         print("episode and season :- \(season)")
-        getChar()
     }
 }
