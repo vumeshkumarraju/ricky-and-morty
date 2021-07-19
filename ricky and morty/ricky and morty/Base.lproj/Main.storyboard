@@ -759,6 +759,9 @@
                                         <state key="normal" title="Dimensions">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dimensionPressed:" destination="DUa-Sw-XIH" eventType="touchUpInside" id="avp-eS-xIR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tb2-m8-QTf">
                                         <rect key="frame" x="271" y="185" width="122" height="41"/>
@@ -768,6 +771,9 @@
                                         <state key="normal" title="Planets">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="PlanetsPressed:" destination="DUa-Sw-XIH" eventType="touchUpInside" id="TIc-0a-WJl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3N-D1-wgC">
                                         <rect key="frame" x="14" y="185" width="131" height="41"/>
@@ -778,6 +784,9 @@
                                         <state key="normal" title="Stations">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="StationPressed:" destination="DUa-Sw-XIH" eventType="touchUpInside" id="44p-x7-vPc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1099,7 +1108,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="NJM-MA-UFD"/>
         <segue reference="VRs-oE-Xhk"/>
-        <segue reference="Fu5-d6-HAl"/>
+        <segue reference="waP-OP-jAo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="activeCharacter" width="76" height="49"/>
