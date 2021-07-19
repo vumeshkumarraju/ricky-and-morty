@@ -19,5 +19,6 @@ class episodeCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
 }

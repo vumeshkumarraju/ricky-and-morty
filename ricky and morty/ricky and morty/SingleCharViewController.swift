@@ -18,6 +18,7 @@ class SingleCharViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         charImage.layer.cornerRadius = 8
+        charImage.clipsToBounds = true
         nameLabel.text = singleChar.name
         infoLabel.text = singleChar.status
         originLabel.text = singleChar.origin

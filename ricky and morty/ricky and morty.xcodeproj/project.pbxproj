@@ -24,6 +24,7 @@
 		7F4DB2C426A0335100C3B78A /* locationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DB2C326A0335100C3B78A /* locationData.swift */; };
 		7F4DB2C626A0336800C3B78A /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DB2C526A0336800C3B78A /* LocationManger.swift */; };
 		7F61A9F426A4D0A0003DE97A /* singleLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61A9F326A4D0A0003DE97A /* singleLocationViewController.swift */; };
+		7F706E9E26A526F400675925 /* singleLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F706E9D26A526F400675925 /* singleLocationCollectionViewCell.swift */; };
 		7F76FCF026A0B3C700492FC5 /* characterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76FCEF26A0B3C700492FC5 /* characterTableViewCell.swift */; };
 		7F8B4FB126A439BB0034724E /* locationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8B4FB026A439BB0034724E /* locationTableViewCell.swift */; };
 		7F942B8726A2B55B003B0B53 /* episodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F942B8626A2B55B003B0B53 /* episodeViewController.swift */; };
@@ -74,6 +75,7 @@
 		7F4DB2C326A0335100C3B78A /* locationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationData.swift; sourceTree = "<group>"; };
 		7F4DB2C526A0336800C3B78A /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
 		7F61A9F326A4D0A0003DE97A /* singleLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleLocationViewController.swift; sourceTree = "<group>"; };
+		7F706E9D26A526F400675925 /* singleLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleLocationCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F76FCEF26A0B3C700492FC5 /* characterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterTableViewCell.swift; sourceTree = "<group>"; };
 		7F8B4FB026A439BB0034724E /* locationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationTableViewCell.swift; sourceTree = "<group>"; };
 		7F942B8626A2B55B003B0B53 /* episodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = episodeViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				7FE86A4E26A45E3A005B647B /* episodeCollectionViewCell.swift */,
+				7F706E9D26A526F400675925 /* singleLocationCollectionViewCell.swift */,
 			);
 			path = collection;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				7F4DB2C226A0333800C3B78A /* LocationModel.swift in Sources */,
 				7F4DB2BD26A032FC00C3B78A /* episodeData.swift in Sources */,
 				7F61A9F426A4D0A0003DE97A /* singleLocationViewController.swift in Sources */,
+				7F706E9E26A526F400675925 /* singleLocationCollectionViewCell.swift in Sources */,
 				7F942B8926A2B56B003B0B53 /* locationViewController.swift in Sources */,
 				7F4DB2C626A0336800C3B78A /* LocationManger.swift in Sources */,
 				7FBA211826A4A39F00157849 /* SingleCharViewController.swift in Sources */,

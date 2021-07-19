@@ -70,7 +70,14 @@ class locationViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 104
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "locatShow", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? singleLocationViewController{
+            destination.model = ldimension[(TableView.indexPathForSelectedRow?.row)!]
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         fetch()

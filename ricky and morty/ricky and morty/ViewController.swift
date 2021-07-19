@@ -76,11 +76,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 137
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let vc : SingleCharViewController = self.storyboard?.instantiateViewController(identifier: "singleCharView") as! SingleCharViewController
-//        vc.singleChar = arrChar[indexPath.row]
-//        
-//    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "charShow", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SingleCharViewController{
+            destination.singleChar = arrChar[(TableView.indexPathForSelectedRow?.row)!]
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         fetch()
@@ -89,4 +93,5 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         SerchField.layer.cornerRadius = 8
         SerchField.clipsToBounds = true
     }
+    
 }
