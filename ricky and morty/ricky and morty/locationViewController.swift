@@ -45,7 +45,7 @@ class locationViewController: UIViewController,UITableViewDelegate,UITableViewDa
                         self.lstation.append(LocationModel(name: name, type: type, dimension: dimension, chars: chars))
                     }
                     self.temp.append(LocationModel(name: name, type: type, dimension: dimension, chars: chars))
-                    self.ldimension = self.temp
+                    self.ldimension.append(LocationModel(name: name, type: type, dimension: dimension, chars: chars))
                 }
                 self.TableView.reloadData()
             }
@@ -59,17 +59,17 @@ class locationViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     @IBAction func StationPressed(_ sender: Any) {
-        self.ldimension = self.lstation
+        self.ldimension = lstation
         self.TableView.reloadData()
     }
     
     @IBAction func dimensionPressed(_ sender: Any) {
-        self.ldimension = self.temp
+        self.ldimension = temp
         self.TableView.reloadData()
     }
     
     @IBAction func PlanetsPressed(_ sender: Any) {
-        self.ldimension = self.lplanets
+        self.ldimension = lplanets
         self.TableView.reloadData()
     }
     @IBOutlet var TableView: UITableView!
